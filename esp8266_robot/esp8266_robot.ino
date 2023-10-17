@@ -90,7 +90,8 @@ int stop(String command) {
  
   R_MOTOR->setSpeed(0);
   R_MOTOR->run( RELEASE );
-  
+
+  return 1;
 }
 
 int forward(String command) {
@@ -101,7 +102,8 @@ int forward(String command) {
  
   R_MOTOR->setSpeed(200);
   R_MOTOR->run( FORWARD );
-  
+
+  return 1;
 }
 
 int left(String command) {
@@ -112,7 +114,8 @@ int left(String command) {
  
   R_MOTOR->setSpeed(100);
   R_MOTOR->run( FORWARD );
-  
+
+  return 1;
 }
 
 int right(String command) {
@@ -123,7 +126,8 @@ int right(String command) {
  
   R_MOTOR->setSpeed(100);
   R_MOTOR->run( BACKWARD );
-  
+
+  return 1;
 }
 
 int backward(String command) {
@@ -135,4 +139,5 @@ int backward(String command) {
   R_MOTOR->setSpeed(150);
   R_MOTOR->run( BACKWARD );
   
+  return 1;
 }
